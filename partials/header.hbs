@@ -11,18 +11,22 @@
     {{#if @site.navigation}}
         <nav class="main-nav hidden-xs hidden-sm hidden-md">
             {{navigation}}
+            {{!--
             <button class="button-icon menu-item-button js-modal" data-modal="search" aria-label="Search">
                 <svg class="icon">
                     <use xlink:href="#magnify"></use>
                 </svg>
             </button>
+            --}}
         </nav>
 
+        {{!--
         <button class="button-icon hidden-lg hidden-xl js-modal" data-modal="search" aria-label="Search">
             <svg class="icon">
                 <use xlink:href="#magnify"></use>
             </svg>
         </button>
+        --}}
         <div class="burger hidden-lg hidden-xl">
             <div class="burger-bar"></div>
             <div class="burger-bar"></div>
@@ -44,8 +48,9 @@
                 </nav>
             </div>
         </div>
-    {{/if}}
+    {{/if}}    
     <div class="header-right hidden-xs hidden-sm hidden-md">
+        {{!--
         {{#if @member}}
             <button class="button-text menu-item members-account" data-portal="account">Account</button>
             {{#unless @member.paid}}
@@ -55,7 +60,8 @@
             <button class="button-text menu-item members-login" data-portal="signin">Login</button>
             <button class="button-text menu-item menu-item-cta members-subscribe" data-portal="signup">Subscribe</button>
         {{/if}}
-    </div>
+        --}}
+    </div>    
 </header>
 
 {{#is "post"}}

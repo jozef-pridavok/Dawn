@@ -10,6 +10,14 @@
                 <span class="single-meta-item single-meta-length">
                     {{reading_time}}
                 </span>
+                {{#foreach tags}}
+                    <span class="single-meta-item single-meta-tag">
+                        <a class="post-tag post-tag-{{slug}}" href="{{url}}">
+                            {{name}}
+                        </a>
+                    </span>
+                {{/foreach}}
+                {{!--
                 {{#primary_tag}}
                     <span class="single-meta-item single-meta-tag">
                         <a class="post-tag post-tag-{{slug}}" href="{{url}}">
@@ -17,6 +25,7 @@
                         </a>
                     </span>
                 {{/primary_tag}}
+                --}}
             </div>
         {{/is}}
         <h1 class="single-title">{{title}}</h1>
@@ -54,6 +63,7 @@
                 {{/prev_post}}
             </div>
             <div class="single-footer-middle">
+                {{!--
                 <div class="single-footer-top">
                     <h3 class="single-footer-title">Published by:</h3>
                     <div class="author-list">
@@ -69,9 +79,11 @@
                                 </a>
                             </div>
                         {{/foreach}}
-                    </div>
+                    </div>                    
                 </div>
+                --}}
                 <div class="single-footer-bottom">
+                    {{!--
                     <div class="share">
                         <a class="share-link share-link-facebook"
                             href="https://www.facebook.com/sharer.php?u={{url absolute="true"}}"
@@ -90,6 +102,7 @@
                             Tweet
                         </a>
                     </div>
+                    --}}
                 </div>
             </div>
             <div class="single-footer-right">
